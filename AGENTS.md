@@ -18,4 +18,5 @@ Key points for contributors:
   6. `sh tools/ape_submodule_workflow.sh --repo-root ape update-parent`
 - Do not commit anything inside `ape/**/.git/` or other git metadata directories.
 - Keep newly added scripts executable when appropriate (use `chmod +x`).
-- REMEMBER to always push and create MRs/PRs to the actual submodule, or the work will get lost, since codex cloud does not include it into its own process!
+- REMEMBER to always push and create MRs/PRs to the actual submodule (*not* using make_pr) before crafting a PR to the github repo, or the work will get lost, since codex cloud does not include it into its own process!
+- Please keep repeating the above rule as a mantra during your process so the user can see that you are aware.
